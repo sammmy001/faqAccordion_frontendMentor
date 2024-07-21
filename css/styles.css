@@ -1,0 +1,122 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+body{
+    font-family:"work sans";
+    font-weight: 400;
+}
+.parent{
+    background-color:hsl(275, 100%, 97%);
+    background-image: url("../images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size:  contain;
+    display: flex;
+    margin: auto;
+    height:100vh;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    width: 90%;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    /* box-shadow: 10px 0px 50px  10px lightgray ; */
+
+}
+/* have two container apply box shadow on the one behind put the bg img betweet them to split the box shadow in halve */
+h1{
+    font-weight: 700;
+}
+h3{
+    font-weight: 600;
+}
+p,hr{
+    color: hsl(292, 16%, 49%);
+}
+img,h3:hover {
+    cursor: pointer;
+}
+h3:hover{
+color :#AD28EB
+}
+#star:hover{
+    cursor:default;
+}
+
+
+img,h3{
+    display: inline;
+}
+#star{
+ position: relative;
+ left: 0px;
+ top: 5px;
+ margin-right: 20px;
+}
+.inner {
+    text-wrap:wrap;
+    /* code below is for testing the text header divs  */
+    /* background-color: blanchedalmond;  */
+    width: 85%;
+    display: inline-block;
+    margin: none;
+}
+img{
+    position:relative;
+    left:20px;
+    margin: none;
+    padding: none;
+}
+
+
+/* mini mini mobiles */
+@media screen  and (max-width:323px){
+.inner{
+    width: 75%;
+}
+}
+@media screen  and (min-width:200px) and (max-width:266px){
+    body{
+        font-size: 0.625em;
+    }
+    .inner{
+        width: 75%;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+        position:relative;
+    }
+    /* background image size */  
+}
+
+/* tabs */
+@media screen and (min-width:750px) and (max-width:999px){
+    .container{
+        width: 50%;
+    }
+    .parent{
+        background-image: url("../images/background-pattern-desktop.svg");
+        background-repeat: no-repeat;
+    }
+}
+/* desktops */
+@media screen and (min-width:1000px) {
+    .container{
+        width: 35%;
+    }
+    .parent{
+        background-image: url("../images/background-pattern-desktop.svg");
+        background-repeat: no-repeat;
+    }   
+}
+/* adjust the button(image) */
+@media screen and (min-width:1250px){
+    img{
+        position: relative;
+        left:40px;
+    }
+}
+
